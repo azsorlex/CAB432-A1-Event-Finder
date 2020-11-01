@@ -1,0 +1,48 @@
+#events {
+  float: left;
+  width: 34%;
+  height: 98vh;
+  overflow-y: auto;
+  border: 1px solid;
+}
+
+.event {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  min-height: 100px;
+  border: 3px outset;
+  cursor: pointer;
+}
+
+.event:active {
+  border-style: inset;
+}
+
+.event:not(:first-of-type) {
+  margin-top: 10px;
+}
+
+#map {
+  float: right;
+  width: 65%;
+  height: 98vh;
+  border: 1px solid;
+}
+
+#mapcover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  cursor: wait;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.700);
+}

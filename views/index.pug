@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  #events
+  #map
+  #mapcover
+    h1 Please wait...
+  script(src="/javascripts/map.js")
+  script(defer src=`https://maps.googleapis.com/maps/api/js?key=${MAPS_API_KEY}&callback=initMap`)
+  script(src="/javascripts/events.js")
